@@ -1,0 +1,14 @@
+/* ------------------------------------------------------------ *\
+	Button
+\* ------------------------------------------------------------ */
+
+.btn { display: inline-block; vertical-align: middle; -webkit-appearance: none; -moz-appearance: none; appearance: none; transition: all .3s; }
+.btn { border: 2px solid #d5d5d5; background: #333; box-shadow: 0 10px 10px -8px rgba(0,0,0,.78); padding: 7px 25px; text-decoration: none; border-radius: 30px; }
+.btn:hover { background: #d5d5d5; color: #333; }
+.btn_blue { border: 2px solid #007ced; }
+.btn_blue:hover { background: #007ced; color: #fff; }
+
+
+/*  Button Block  */
+.btn-block { display: block; padding-left: 0; padding-right: 0; }
+

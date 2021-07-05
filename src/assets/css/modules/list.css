@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------ *\
+	List
+\* ------------------------------------------------------------ */
+
+[class^="list-"] { list-style: none outside none; }
+[class^="list-"] a { display: inline-block; text-decoration: none; }
+
+.list-socials { display: flex; flex-wrap: wrap; align-items: center; justify-self: start; margin-bottom: 0; }
+
+.list-buttons { display: flex; flex-wrap: wrap; align-items: center; justify-self: start; margin: 0 -5px; }
+.list-buttons li { padding: 0 5px; margin-bottom: 10px; }
+
+@media (max-width: 767px) {
+	.list-buttons { justify-content: center; }
+}
+
+.list-services { display: flex; flex-wrap: wrap; margin: 0 -25px; }
+.list-services li { width: 50%; padding: 0 25px; margin-bottom: 40px; }
+.list-services li div { position: relative; padding-left: 60px; }
+.list-services li div i { position: absolute; font-size: 40px; top: 0; left: 0; color: #007ced; } 
+.list-services li div strong { display: block; margin-bottom: 7px; font-size: 18px; font-weight: 600; color: #fff; }
+.list-services li div span { font-size: 14px; }
+
+@media (max-width: 767px) {
+	.list-services li { width: 100%; }
+}
+
+
+.list-facts { display: flex; flex-wrap: wrap; margin: 0 -25px; }
+.list-facts li { width: 25%; padding: 0 25px; margin-bottom: 40px; }
+.list-facts li div { position: relative; text-align: center; background-color: #333; border-radius: 10px; border: 2px solid #444; padding: 25px 10px; }
+.list-facts li div { box-shadow: 0 12px 17px rgba(0,0,0,.12); }
+.list-facts li div i { font-size: 40px; color: #007ced; margin-bottom: 10px; } 
+.list-facts li div strong { display: block; margin-bottom: 10px; font-size: 16px; padding: 0 10px; color: #fff; font-weight: 600; }
+.list-facts li div span { font-size: 42px; }
+
+@media (max-width: 900px) {
+	.list-facts li { width: 50%; }
+}
+
+@media (max-width: 767px) {
+	.list-facts li { width: 100%; }
+}
+
+.list-contacts li div { display: flex; align-items: center; }
+.list-contacts li { margin-bottom: 30px; }
+.list-contacts li:last-child { margin-bottom: 0px; }
+.list-contacts li em { width: 50px; color: #007ced; display: flex; align-items: center; justify-content: center; }
+.list-contacts li em i { font-size: 40px; }
+.list-contacts li em i.fa-envelope-o { font-size: 32px; }
+.list-contacts li p { width: calc(100% - 50px); padding-left: 20px; }
+.list-contacts li span { font-size: 12px; }
+.list-contacts li strong { color: #fff; display: block; margin-bottom: 7px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 100%; }
+.list-contacts li strong:last-child { margin-bottom: 0; }
+

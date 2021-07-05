@@ -1,0 +1,45 @@
+/* ------------------------------------------------------------ *\
+	Helpers
+\* ------------------------------------------------------------ */
+
+/*  Clear  */
+
+.clear:after { content: ''; line-height: 0; display: table; clear: both; }
+
+
+/*  Notext  */
+
+.notext { white-space: nowrap; text-indent: 100%; text-shadow: none; overflow: hidden; }
+.notext-old { font-size: 0; line-height: 0; text-indent: -4000px; }
+
+
+/*  Hidden  */
+
+[hidden],
+.hidden { display: none; }
+
+
+/*  Alignleft  */
+
+.alignleft { float: left; }
+
+
+/*  Alignright  */
+
+.alignright { float: right; }
+
+
+/*  Disabled  */
+
+[disabled],
+.disabled { cursor: default; } 
+
+body::-webkit-scrollbar { width: 5px; height: 8px; background-color: #007ced; }
+body::-webkit-scrollbar-thumb { background: #222; }
+
+.text_center { text-align: center; }
+
+#mc_embed_signup div.mce_inline_error { margin: -4px 0 0 !important; border-radius: 0 0 5px 5px; font-weight: 400 !important; font-size: 11px !important; }
+
+#mce-success-response { font-size: 12px; padding: 3px 0; }
+#mce-error-response { font-size: 12px; padding: 3px 0; }

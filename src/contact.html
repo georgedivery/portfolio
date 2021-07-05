@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--#include virtual="ssi/head.html" -->
+
+<body>
+	<div class="wrapper">
+		<div class="shell">
+			<div class="container">
+				<!--#include virtual="ssi/header.html" -->
+
+				<div class="main">
+					<section class="section-contact">
+						<div class="section-head">
+							<h1 class="section-title">
+								Contact
+							</h1>
+						</div>
+
+						<div class="section-body">
+							<div class="cols">
+								<div class="col col_1of3">
+									<ul class="list-contacts">
+										<li>
+											<div>
+												<em>
+													<i class="fa fa-map-marker" aria-hidden="true"></i>
+												</em>
+
+												<p>
+													<strong>
+														Sofia, Bulgaria
+													</strong>
+
+													<span>
+														Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+														labore veritatis aperiam suscipit.
+													</span>
+												</p>
+											</div>
+										</li>
+
+										<li>
+											<div>
+												<em>
+													<i class="fa fa-envelope-o" aria-hidden="true"></i>
+												</em>
+
+												<p>
+													<strong>
+														georgedivery@gmail.com
+													</strong>
+
+													<span>
+														Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+														labore veritatis aperiam suscipit.
+													</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col col_2of3">
+									<h5 class="section-title section_title_border">
+										How Can I Help You?
+									</h5>
+
+									<form id="contact-form">
+										<div class="thanks">
+											Thank You!
+										</div>
+										
+										<div class="cols cols_inner">
+											<input type="hidden" name="contact_number">
+											<div class="col col_1of2">
+												<div class="form-row">
+													<input type="text" name="name" placeholder="Name" class="field">
+												</div>
+
+												<div class="form-row">
+													<input type="email" name="email" placeholder="Email" class="field">
+												</div>
+
+												<div class="form-row">
+													<input type="text" name="subject" placeholder="Subject"
+														class="field">
+												</div>
+											</div>
+
+											<div class="col col_1of2">
+												<div class="form-row">
+													<textarea name="msg" id="msg" placeholder="Message"
+														class="textarea"></textarea>
+												</div>
+											</div>
+
+											<div class="col">
+												<div class="form-row">
+													<input type="submit" value="Send Message" class="btn btn_blue">
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<script type="text/javascript">
+					jQuery(function ($) {
+						window.onload = function () {
+							document.getElementById('contact-form').addEventListener('submit', function (event) {
+								event.preventDefault();
+								// generate a five digit number for the contact_number variable
+								this.contact_number.value = Math.random() * 100000 | 0;
+								// these IDs from the previous steps
+								emailjs.sendForm('service_3ohln9k', 'template_ecaaq9g', this) 
+									.then(function () {
+										console.log('SUCCESS!');
+										$('#contact-form').addClass('success')
+									}, function (error) {
+										console.log('FAILED...', error);
+									});
+							});
+						}
+						
+					})
+					</script>
+				</div><!-- /.main -->
+
+				<!--#include virtual="ssi/footer.html" -->
+			</div>
+		</div>
+	</div><!-- /.wrapper -->
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+/* ------------------------------------------------------------ *\
+	Wrapper
+\* ------------------------------------------------------------ */
+
+.wrapper { position: relative; min-height: 100%; overflow: hidden; background-color: #007ced; padding: 50px 0; background-size: cover; background-position: center; } 
+
+@media (max-width: 767px) {
+	.wrapper { padding: 10px 0; }	 
+}
